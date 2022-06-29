@@ -1,0 +1,20 @@
+a.card {
+  text-align: center;
+  margin-top: 1em;
+  color: #ee352a;
+}
+img.card__img {
+  width: 30em;
+  border-radius: 3em;
+  outline: 0.2em dotted#e5e5e5;
+  outline-offset: -0.5em;
+}
+img.card__img:hover {
+  transform: scale(1.15);
+}
+h2 {
+  color: #ee352a;
+}
+h3 {
+  color: #ee352a;
+}

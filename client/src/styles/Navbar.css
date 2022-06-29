@@ -1,0 +1,40 @@
+ul.navbar {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  background-color: #ee352a;
+  display: grid;
+  grid-template-rows: 7em 7em 7em;
+
+  grid-template-areas:
+    ". . . . . ."
+    "l b b b b s"
+    ". . . . . .";
+}
+.navbar__li {
+  font-size: 2.2em;
+  color: #ffffff;
+  background-color: #ee352a;
+  grid-area: b;
+  align-self: center;
+  text-align: right;
+}
+.searchbar {
+  grid-area: s;
+}
+a.navbar__btn {
+  color: #ffffff;
+}
+a:link {
+  color: #282a35;
+  text-decoration: none;
+  margin: 2em;
+}
+a:link:hover {
+  text-decoration: underline;
+}
+img.logo {
+  margin-top: 1.5em;
+  height: 18em;
+}

@@ -1,0 +1,20 @@
+.landing {
+  text-align: center;
+  display: grid;
+ /*  grid-template-areas:
+    ". l ."
+    ". b ."
+    ". l ."; */
+    /* grid-template-columns: 1fr auto 1fr; */
+/*   grid-template-rows: 1fr 1fr 1fr;
+ */  place-items: center;
+}
+button.landing__btn {
+  grid-area: b;
+  display: grid;
+
+  place-items: center;
+}
+.landing__h1 {
+  grid-area: l;
+}

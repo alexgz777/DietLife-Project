@@ -1,0 +1,45 @@
+div.home__recipes {
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  display: grid;
+  grid-template-columns: 40em auto 40em;
+  grid-template-rows: 40em 40em 40em;
+
+  justify-content: space-around;
+  align-content: space-around;
+}
+.filterPages {
+  display: grid;
+  grid-template-rows: 5em 5em;
+  grid-template-areas:
+    ". f ."
+    ". p .";
+  background-color: #282a35;
+  text-align: center;
+}
+.filters {
+  color: #ffffff;
+  background: none;
+  height: 20px;
+  width: 1500px;
+  grid-area: f;
+}
+.pages__li{
+  text-align: center;
+}
+ul.pages__ul {
+  height: 2em;
+  grid-area: p;
+}
+label {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+button.pages__btn {
+  width: 3em;
+  height: 1.4em;
+  background-color: #ffffff;
+  color: #282a35;
+  margin: 0.1em;
+}

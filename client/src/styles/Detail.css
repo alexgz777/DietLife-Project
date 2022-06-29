@@ -1,0 +1,12 @@
+.detail {
+    /* display: grid;
+  grid-template-areas:
+    ". . . . ."
+    ". d d d ."
+    ". . . . ."; */
+    text-align: center;
+}
+
+.detail__container {
+  grid-area: d;
+}
