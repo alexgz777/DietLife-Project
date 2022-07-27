@@ -9,7 +9,6 @@ const Navbar = () => {
     <ul className="navbar">
       <li className="navbar__li">
         <img src={dietlife} alt="logo" className="navbar__logo" />
-
         <Link to={`/`} className="navbar__btn">
           Start
         </Link>
