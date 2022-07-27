@@ -1,16 +1,16 @@
 .searchbar {
-  width: fit-content;
+
+width: 270px;
 }
 .searchbar__input {
   background-color: #282a35;
   color: #ffffff;
   height: 3em;
-  width: 15em;
+  width: 10em;
   margin-top: 0;
   padding: none;
-
-  border-top-left-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius:5px ;
   font-size: large;
 }
 
@@ -18,14 +18,12 @@
   background-color: #282a35;
   color: #ffffff;
   height: 3em;
-  width: 5em;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: none;
-  border-top-right-radius: 0.3em;
-  border-bottom-right-radius: 0.3em;
-  border-bottom-left-radius: none;
-  border-top-left-radius: none;
+  width: 4em;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius:0 ;
+
 }
 .searchbar__btn:hover {
   color: #282a35;

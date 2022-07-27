@@ -12,7 +12,7 @@ export const FILTER_DIET = "FILTER_DIET";
 export const getRecipes = () => {
   return async (dispatch) => {
     try {
-      const recipes = await axios.get("http://localhost:3001/recipes");
+      const recipes = await axios.get("/recipes");
       dispatch({ type: GET_RECIPES, payload: recipes.data });
     } catch (error) {
       console.error("Error to get recipes", error.message);
@@ -23,7 +23,7 @@ export const getRecipes = () => {
 export const getRecipeById = (id) => {
   return async (dispatch) => {
     try {
-      const recipe = await axios.get(`http://localhost:3001/recipes/${id}`);
+      const recipe = await axios.get(`/recipes/${id}`);
       dispatch({ type: GET_RECIPE_BY_ID, payload: recipe.data });
     } catch (error) {
       console.error(`Error to get ${id} recipe`, error.message);
@@ -34,7 +34,7 @@ export const searchRecipe = (title) => {
   return async (dispatch) => {
     try {
       const recipe = await axios.get(
-        `http://localhost:3001/recipes?name=${title}`
+        `/recipes?name=${title}`
       );
       return dispatch({
         type: SEARCH_RECIPE,
@@ -48,7 +48,7 @@ export const searchRecipe = (title) => {
 export const getDiets = () => {
   return async (dispatch) => {
     try {
-      const diets = await axios.get("http://localhost:3001/diets");
+      const diets = await axios.get("/diets");
       dispatch({ type: GET_DIETS, payload: diets.data });
     } catch (error) {
       console.error("Error to get diets", error.message);
@@ -58,7 +58,7 @@ export const getDiets = () => {
 export const postRecipes = (data) => {
   return async (dispatch) => {
     try {
-      const recipe = await axios.post("http://localhost:3001/recipes", data);
+      const recipe = await axios.post("/recipes", data);
       dispatch({ type: POST_RECIPES, payload: recipe });
     } catch (error) {
       console.error("Error to post recipes", error.message);

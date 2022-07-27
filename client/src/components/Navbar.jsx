@@ -6,8 +6,8 @@ import Dietlife from "../assets/Dietlife.png";
 const Navbar = () => {
   return (
     <ul className="navbar">
-      <img src={Dietlife} alt="logo" className="logo" />
       <li className="navbar__li">
+        <img src={Dietlife} alt="logo" className="navbar__logo" />
         <a href="http://localhost:3000/" className="navbar__btn">
           Start
         </a>
@@ -20,7 +20,7 @@ const Navbar = () => {
         <a href="http://localhost:3000/about" className="navbar__btn">
           About Us
         </a>
-        <Searchbar />
+        <Searchbar/>
       </li>
     </ul>
   );

@@ -8,7 +8,6 @@ const Searchbar = () => {
   const [recipe, setRecipe] = useState("");
 
   const handleInput = (e) => {
-    e.preventDefault();
     setRecipe(e.target.value);
   };
   const handleSearch = (e) => {
@@ -21,8 +20,8 @@ const Searchbar = () => {
         className="searchbar__input"
         type="text"
         name="input"
-        placeholder="What recipe do you search?"
-        value={recipe.input}
+        placeholder="Search recipe"
+        value={recipe}
         onChange={(e) => handleInput(e)}
       />
       <button

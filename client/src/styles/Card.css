@@ -1,15 +1,17 @@
 a.card {
-  text-align: center;
-  margin-top: 1em;
+/*   text-align: center;
+ */  margin-top: 1em;
   color: #ee352a;
+  display: grid;
+  justify-items: center;
 }
-img.card__img {
-  width: 30em;
+.card__img {
+  width: 20em;
   border-radius: 3em;
   outline: 0.2em dotted#e5e5e5;
   outline-offset: -0.5em;
 }
-img.card__img:hover {
+.card__img:hover {
   transform: scale(1.15);
 }
 h2 {

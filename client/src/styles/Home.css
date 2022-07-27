@@ -1,17 +1,17 @@
 div.home__recipes {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin: 3em 8em 3em 8em;
 
   display: grid;
-  grid-template-columns: 40em auto 40em;
-  grid-template-rows: 40em 40em 40em;
+  gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 
-  justify-content: space-around;
-  align-content: space-around;
+  justify-items: center;
+  align-items: center;
 }
 .filterPages {
   display: grid;
-  grid-template-rows: 5em 5em;
+  grid-template-rows: 3em 3em;
   grid-template-areas:
     ". f ."
     ". p .";
@@ -21,11 +21,9 @@ div.home__recipes {
 .filters {
   color: #ffffff;
   background: none;
-  height: 20px;
-  width: 1500px;
   grid-area: f;
 }
-.pages__li{
+.pages__li {
   text-align: center;
 }
 ul.pages__ul {
