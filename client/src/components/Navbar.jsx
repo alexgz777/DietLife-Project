@@ -10,17 +10,17 @@ const Navbar = () => {
       <li className="navbar__li">
         {/*         <img src={Dietlife} alt="logo" className="navbar__logo" />
          */}{" "}
-        <Link to={`${process.env.VITE_API_KEY}`} className="navbar__btn">
-          <button>Start</button>
+        <Link to={`/`} className="navbar__btn">
+          Start
         </Link>
-        <Link to={`${process.env.VITE_API_KEY}/home`} className="navbar__btn">
-          <button>Home</button>
+        <Link to={`/home`} className="navbar__btn">
+          Home
         </Link>
-        <Link to={`${process.env.VITE_API_KEY}/create`} className="navbar__btn">
-          <button>Create</button>
+        <Link to={`create`} className="navbar__btn">
+          Create
         </Link>
-        <Link to={`${process.env.VITE_API_KEY}/about`} className="navbar__btn">
-          <button> About Us</button>
+        <Link to={`/about`} className="navbar__btn">
+          About Us
         </Link>
         <Searchbar />
       </li>
