@@ -2,14 +2,13 @@ import React from "react";
 import Searchbar from "./Searchbar";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
-/* import Dietlife from "../assets/Dietlife.png";
- */
+import Dietlife from "../assets/Dietlife.png";
+
 const Navbar = () => {
   return (
     <ul className="navbar">
       <li className="navbar__li">
-        {/*         <img src={Dietlife} alt="logo" className="navbar__logo" />
-         */}{" "}
+        <img src={Dietlife} alt="logo" className="navbar__logo" />
         <Link to={`/`} className="navbar__btn">
           Start
         </Link>
