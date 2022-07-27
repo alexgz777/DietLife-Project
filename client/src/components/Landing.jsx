@@ -33,10 +33,10 @@ const Landing = () => {
       <Link to={"/home"}>
         <div className="landing-text-wrapper">
           <div className="spinning-title">
-{/*             <p>{titleMod}</p>
- */}          </div>
-          <img src={Dietlife} alt="dietlife" className="landing__logo" />
-          <div className="spinning-sub">
+            <p>{titleMod}</p>
+          </div>
+{/*           <img src={Dietlife} alt="dietlife" className="landing__logo" />
+ */}          <div className="spinning-sub">
             <p>{subMod}</p>
           </div>
         </div>
