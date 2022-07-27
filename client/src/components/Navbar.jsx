@@ -7,20 +7,21 @@ const Navbar = () => {
   return (
     <ul className="navbar">
       <li className="navbar__li">
-{/*         <img src={Dietlife} alt="logo" className="navbar__logo" />
- */}        <a href="http://localhost:3000/" className="navbar__btn">
+        {/*         <img src={Dietlife} alt="logo" className="navbar__logo" />
+         */}{" "}
+        <a href="/" className="navbar__btn">
           Start
         </a>
-        <a href="http://localhost:3000/home" className="navbar__btn">
+        <a href="/home" className="navbar__btn">
           Home
         </a>
-        <a href="http://localhost:3000/create" className="navbar__btn">
+        <a href="/create" className="navbar__btn">
           Create
         </a>
-        <a href="http://localhost:3000/about" className="navbar__btn">
+        <a href="/about" className="navbar__btn">
           About Us
         </a>
-        <Searchbar/>
+        <Searchbar />
       </li>
     </ul>
   );
