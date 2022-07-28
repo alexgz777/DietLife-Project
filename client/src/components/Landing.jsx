@@ -36,7 +36,7 @@ const Landing = () => {
             <p>{titleMod}</p>
           </div>
           <img
-            src={"../assets/dietlife.png"}
+            src={"src/assets/dietlife.png"}
             alt="dietlife"
             className="logo"
           />
