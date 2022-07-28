@@ -36,9 +36,9 @@ const Landing = () => {
             <p>{titleMod}</p>
           </div>
           <img
-            src="../assets/dietlife.png"
+            src={"../assets/dietlife.png"}
             alt="dietlife"
-            className="landing__logo"
+            className="logo"
           />
           <div className="spinning-sub">
             <p>{subMod}</p>
