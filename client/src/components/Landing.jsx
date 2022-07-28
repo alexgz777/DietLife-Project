@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Landing.css";
-/* import dietlife from "../assets/dietlife.png";
- */
+import dietlife from "./dietlife.png";
+
 const Landing = () => {
   const title = "Do you wanna eat healthy? ";
   const subtitle = "We are here to help you ";
@@ -36,7 +36,7 @@ const Landing = () => {
             <p>{titleMod}</p>
           </div>
           <img
-            src="../assets/dietlife"
+            src={dietlife}
             alt="logo"
             className="landing__logo"
           />
